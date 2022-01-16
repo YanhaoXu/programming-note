@@ -49,5 +49,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
 
 #添加远程登录用户
 CREATE USER 'testdb'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+CREATE USER 'testdb'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 GRANT ALL PRIVILEGES ON *.* TO 'testdb'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'testdb'@'localhost';
 ```
