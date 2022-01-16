@@ -37,8 +37,6 @@ D:\DevOps\docker\volume\database\mysql\conf\my.cnf
 secure_file_priv=/var/lib/mysql
 ```
 
-
-
 ## 二、MySQL用户管理
 
 + 快速配置
@@ -47,10 +45,9 @@ secure_file_priv=/var/lib/mysql
 #登录mysql
 mysql -u root -p
 
-ALTER USER 'root'@'localhost' IDENTIFIED BY '123456!';
+ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
 
 #添加远程登录用户
-CREATE USER 'testdb'@'%' IDENTIFIED WITH mysql_native_password BY '123456!';
+CREATE USER 'testdb'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
 GRANT ALL PRIVILEGES ON *.* TO 'testdb'@'%';
 ```
-
