@@ -28,11 +28,11 @@ docker exec -it mysql8 bash
 
 + 准备的目录和文件
 
-D:\DevOps\docker\volume\database\mysql\lib\mysql-files
+> D:\DevOps\docker\volume\database\mysql\lib\mysql-files
 
-D:\DevOps\docker\volume\database\mysql\conf\my.cnf
+> D:\DevOps\docker\volume\database\mysql\conf\my.cnf
 
-```in
+```ini
 [mysqld]
 secure_file_priv=/var/lib/mysql
 ```
@@ -53,3 +53,4 @@ CREATE USER 'testdb'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345
 GRANT ALL PRIVILEGES ON *.* TO 'testdb'@'%';
 GRANT ALL PRIVILEGES ON *.* TO 'testdb'@'localhost';
 ```
+
