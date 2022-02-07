@@ -1,6 +1,6 @@
 # Mysql笔记
 
-## 一、MySQL的安装和配置
+## 1. MySQL的安装和配置
 
 + docker 安装 mysql 8 版本
 
@@ -37,7 +37,7 @@ docker exec -it mysql8 bash
 secure_file_priv=/var/lib/mysql
 ```
 
-## 二、MySQL用户管理
+## 2. MySQL用户管理
 
 + 快速配置
 
@@ -55,6 +55,27 @@ GRANT ALL PRIVILEGES ON *.* TO 'testdb'@'localhost';
 
 
 create schema test;
+
+```
+
+## 3. MySQL数据库的基本操作
+```sql
+# 创建数据库（CREATE DATABASE语句）
+CREATE DATABASE IF NOT EXISTS test_db;
+
+# 查看 test_db 数据库的定义声明
+SHOW CREATE DATABASE test_db;
+
+# 修改数据库（ALTER DATABASE语句）
+ALTER DATABASE test_db
+DEFAULT CHARACTER SET gb2312
+DEFAULT COLLATE gb2312_chinese_ci;
+
+# 删除数据库（DROP DATABASE语句）
+DROP DATABASE IF EXISTS test_db;
+
+# 选择数据库（MySQL USE语句）
+USE test_db;
 
 ```
 
