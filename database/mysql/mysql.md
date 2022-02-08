@@ -78,4 +78,55 @@ DROP DATABASE IF EXISTS test_db;
 USE test_db;
 
 ```
+## 4. MySQL数据表的基本操作
 
+```sql
+# 在指定的数据库中创建表
+# 创建员工表 tb_emp1
+create table if not exists test_db.tb_emp1
+(
+    id     INT(11),
+    name   VARCHAR(25),
+    deptId INT(11),
+    salary FLOAT
+);
+
+# 查看数据表是否创建成功
+SHOW TABLES;
+
+# MySQL查看表结构命令
+# DESCRIBE：以表格的形式展示表结构
+DESCRIBE <表名>;
+DESC <表名>;
+# SHOW CREATE TABLE：以SQL语句的形式展示表结构
+SHOW CREATE TABLE <表名>;
+
+# MySQL数据表添加字段
+# 新建 student 数据表
+drop table if exists test_db.student;
+create table if not exists test_db.student
+(
+    id   int(4),
+    name varchar(20),
+    sex  char(1)
+);
+
+# 使用 ALTER TABLE 语句添加一个 INT 类型的字段 age
+alter table student add age int(4);
+
+# MySQL修改/删除字段
+# 修改字段名称
+
+
+
+
+
+
+
+
+
+
+# 修改数据表
+# 修改表名
+ALTER TABLE student RENAME TO tb_students_info;
+```
