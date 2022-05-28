@@ -78,4 +78,4 @@
 
 > 云服务模型比较
 
-![](https://docs.microsoft.com/zh-cn/learn/azure-fundamentals/fundamental-azure-concepts/media/shared-responsibility-76efbc1e.png)
+![云服务模型比较](azure-900.assets/shared-responsibility-76efbc1e.png)
