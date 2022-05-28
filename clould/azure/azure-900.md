@@ -4,7 +4,7 @@
 
 ### 1.1. Azure 帐户
 
-![Azure 帐户](https://docs.microsoft.com/zh-cn/learn/azure-fundamentals/intro-to-azure-fundamentals/media/scope-levels-12669ee1.png)
+![Azure 帐户](azure-900.assets/scope-levels-12669ee1.png)
 
 ### 1.2. 不同类型的云模型
 
@@ -74,7 +74,7 @@
 
 > 可以在每个云服务模型中运行的服务
 
-![](https://docs.microsoft.com/zh-cn/learn/azure-fundamentals/fundamental-azure-concepts/media/iaas-paas-saas-575a09e9.png)
+![](azure-900.assets/iaas-paas-saas-575a09e9.png)
 
 > 云服务模型比较
 
